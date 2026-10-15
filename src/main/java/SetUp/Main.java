@@ -70,8 +70,8 @@ public class Main extends Canvas implements Runnable {
 
     public void run() {
         /*
-            Calculates the Delta time, so we won't base everything on FPS
-            but rather time passed.
+            Calculates delta time so the loop is based on elapsed time
+            rather than FPS.
          */
         long lastTime = System.nanoTime();
         long timer = System.currentTimeMillis();
@@ -116,7 +116,7 @@ public class Main extends Canvas implements Runnable {
     }
 
     /*
-        update Updates the simulations, it's not a fixed update but a loop update
+        Updates the simulation in the loop, not in a fixed update.
      */
     public void update(){
 
