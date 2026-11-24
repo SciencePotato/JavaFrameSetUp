@@ -31,11 +31,11 @@ public class Mouse implements MouseListener, MouseMotionListener, MouseWheelList
     }
 
     public boolean isScrollingUp() {
-        return this.scroll == -1;
+        return this.scroll < 0;
     }
 
     public boolean isScrollingDown() {
-        return this.scroll == 1;
+        return this.scroll > 0;
     }
 
     public void resetScroll() {
